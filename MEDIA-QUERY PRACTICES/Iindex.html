@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+width: 100%;
+height: 100px;
+background-color: lightblue;
+    }
+    .container {
+        width: 100%;
+        min-height: calc(100vh - 100px - 200px);
+        background-color: lightgreen;
+        display:flex;
+        align-items: stretch;
+    } 
+    .leftsidebar {
+        flex: 1;
+        background-color: lightcoral;
+    }
+    .content {
+        flex: 6;
+        background-color: lightgrey;
+    }
+    .rightsidebar {
+        flex: 1;
+        background-color: lightyellow;
+    }
+    footer {
+        height: 200px;
+        width: 100%;
+        background-color: cadetblue;
+    }
+   /* @media only screen and (max-width: 900px) and (min-width: 800px) {
+        header 
+        {
+            background-color: red;
+        }
+        footer {
+            background-color: violet;
+        }
+    } */
+</style>
+</head>
+<body>
+    <header>
+        <h1>UPCODE</h1>
+    </header>
+    <div class="container">
+        <div class="leftsidebar">Left</div>
+        <div class="content">Content</div>
+        <div class="rightsidebar">Right</div>
+    </div>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>

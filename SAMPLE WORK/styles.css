@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d11187;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    background-color: #ff9f00;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.icons span {
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Navigation styles */
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+.nav li {
+    cursor: pointer;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+}
+
+.carousel .slide {
+    min-width: 100%;
+    background-color: #ddd;
+    padding: 100px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.products-section {
+    margin-bottom: 20px;
+}
+
+.products-section h2 {
+    margin-bottom: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;  display: flex;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    text-align: center;
+    flex: 1 1 calc(25% - 2rem); 
+    box-sizing: border-box;
+}
+
+.product {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid;
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #2874f0;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a,
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-media span {
+    margin-right: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 200px;
+    }
+    
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .header, .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

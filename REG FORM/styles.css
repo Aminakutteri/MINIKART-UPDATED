@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.form-header {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    text-align: right;
+    margin-right: 10px;
+    width: 120px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+.form-group.checkbox-group {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group.checkbox-group label {
+    display: block;
+}
+
+
+.form-group.radio-group {
+    flex-direction: row;  
+    align-items: center;  
+    gap: 10px;           
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.form-group.radio-group label {
+    display: flex;            
+    margin-bottom: 0;    
+}
+
+
+.form-group.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    background-color: #1a6caf;
+    border: none;
+    color: rgb(10, 5, 5);
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color:#1a6caf; ;
+}
+
+button:hover {
+    opacity: 0.8;
+}
